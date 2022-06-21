@@ -1,0 +1,105 @@
+/* Mise en page générale */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 350px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-check{
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+/* Mise en page du jeu */
+#message{
+  font-size: 2em;
+}
+
+#mastermind, #palette, #reponse, #verifier{
+  display: none;
+}
+
+
+#mastermind {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button, .couleurADeviner, .proposition{
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 20px;
+}
+
+
+/* Mise en page de l'interieur du mastermind */
+.couleurADeviner, .proposition, .pointeur{
+  background-color: grey;
+}
+
+.pointeur {
+  width: 5px;
+  height: 5px;
+  border: 0;
+  border-radius: 2.5px;
+}
+
+th {
+  padding-bottom: 1em;
+}
+
+.couleurADeviner {
+  display: flex;
+}
+
+.verticalAlign {
+  margin: auto;
+  text-align: center;
+  font-size: 1em;
+}
+
+
+/* Mise en page de la pellette */
+#palette {
+  margin-inline: auto;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#red {
+  background-color: rgb(231, 111, 81);
+}
+#blue {
+  background-color: rgb(152, 193, 217);
+}
+#green {
+  background-color: rgb(42, 157, 143);
+}
+#yellow {
+  background-color: rgb(233, 196, 106);
+}
+#orange{
+  background-color: rgb(244, 162, 97);
+}
+#black {
+  background-color: rgb(37, 50, 55);
+}
+
